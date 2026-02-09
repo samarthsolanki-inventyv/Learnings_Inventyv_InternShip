@@ -1,0 +1,6 @@
+[package]
+name = "_9_Inventory_with_Lifetime_Closure"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
