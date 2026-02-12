@@ -1,0 +1,9 @@
+[package]
+name = "_10_Multithreaded_Application"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.43"
+rand = "0.10.0"
+uuid = { version = "1.20.0", features = ["v4"] }
