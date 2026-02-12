@@ -38,7 +38,8 @@ Inventyv_Training/
 |   ├── _6_module_system
 |   ├── _7_HashMap_Task
 |   ├── _8_Inventory_Task
-|
+|   ├── _9_Inventory_with_Lifetime_Closure
+|   ├── _10_Multithreaded_Application
 └── README.md
 ```
 
@@ -171,10 +172,20 @@ Explores Rust's hash-based collections:
 - Checking membership
 - Removing duplicates
 
-### 8. **_8_Inventory_Task**
+### 8. _8_Inventory_Task
 A comprehensive project integrating multiple Rust concepts:
 - Practical application of structs, methods,traits and collections
 - Inventory management system implementation
 - Error handling and input validation
----
 
+### 9. _9_Inventory_with_Lifetime_Closure
+- Lifetime was added in generics implementation and also Closure is used instead of normal function in Display_All function
+
+### 10. _10_Multithreaded_Application
+- This application demonstrates safe, concurrent state management using Arc and Mutex in Rust.
+- Concurrent Record Creation: A background thread generates unique data records every 10 seconds, utilizing an atomic counter for thread-safe ID generation.
+- Real-Time State Monitoring: A dedicated printer thread snapshots the shared memory every 5 seconds, displaying records with human-readable timestamps (HH:MM:SS am/pm).
+- Automated Memory Cleanup: Two independent janitor threads monitor the collection every second, removing records based on ID parity (Even/Odd) once they exceed a 20-second lifespan.
+- Live Data Auditing: Separate counter threads continuously calculate and report the total number of even and odd records currently stored in the shared vector.
+
+---
